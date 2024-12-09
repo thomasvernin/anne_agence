@@ -74,25 +74,32 @@ ul {
   list-style: none;
 }
 
-/* nav bar  */
-
+/* Navbar */
 .main-nav {
-  margin-top: 20px;
+  display: flex;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 30px;
+  background-color: #fff; 
+  z-index: 1000; 
 }
 
 .company-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
   cursor: default;
 }
+
 .company-logo img {
   margin-left: 10px;
   margin-right: 5px;
   width: 50px;
 }
+
 .company-logo span {
   font-size: 24px;
   color: #28282f;
@@ -100,16 +107,23 @@ ul {
 }
 
 .nav-links {
+  display: flex;
+  justify-content: flex-end;
   flex-basis: 730px;
-}
-.nav-links ul {
-  justify-content: end;
   gap: 40px;
 }
 
-.nav-toggle {
-  display: none;
+.nav-links ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  list-style: none;
 }
+
+.nav-toggle {
+  display: none; 
+}
+
 .primary-button {
   background-color: var(--accent-color);
   border-radius: 6px;
