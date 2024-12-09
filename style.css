@@ -16,6 +16,7 @@ html {
   --accent-color-dark: #1d69a3;
   --padding-inline-section: 20px;
 }
+
 /* resets */
 body {
   font-family: "Jost", sans-serif;
@@ -161,6 +162,7 @@ header {
 .header-section {
   justify-content: center;
   gap: 50px;
+  margin-top: 100px;
 }
 
 .header-left {
@@ -198,11 +200,13 @@ header {
 .features-header {
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 100px;
 }
 
 .features-header h2 {
   margin-bottom: 20px;
 }
+
 .features-header h3 {
   color: var(--secondary-text-color);
 }
