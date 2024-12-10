@@ -31,6 +31,10 @@
     margin-bottom: 0;
   }
 
+  .primary-button.n { 
+    padding: 8px 310px;
+  }
+
   .features-section,
   .examples-section {
     padding: 0;
@@ -84,6 +88,10 @@
 
   .features-card {
     min-width: calc(50% - 10px);
+  }
+
+  .primary-button.n { 
+    padding: 8px 220px;
   }
 
   .big-feature-container,
@@ -161,6 +169,10 @@
   .feature-img img {
     padding: 0;
     width: 100% !important;
+  }
+
+  .primary-button.n { 
+    padding: 8px 120px;
   }
 
   #top-banner-text {

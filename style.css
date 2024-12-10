@@ -64,6 +64,9 @@ a {
 
 .hover-link:hover {
   color: var(--accent-color);
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 6px 15px;
 }
 
 .flex {
@@ -119,8 +122,8 @@ ul {
 
 .nav-links ul {
   display: flex;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: flex-end ;
+  gap: 20px;
   list-style: none;
 }
 
@@ -133,7 +136,7 @@ ul {
   border-radius: 6px;
   font-weight: 500;
   color: white !important;
-  padding: 12px 24px;
+  padding: 8px 15px;
   box-shadow: 0 0 2px var(--secondary-text-color);
   transition: 0.2s ease-out;
   text-align: center;
@@ -148,7 +151,7 @@ ul {
   border-radius: 6px;
   font-weight: 500;
   color: var(--primary-text-color) !important;
-  padding: 12px 24px;
+  padding: 8px 15px;
   transition: 0.2s ease-out;
 }
 
