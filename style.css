@@ -9,18 +9,37 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+
+
 :root {
+  --background-color: rgb(255, 255, 255) ; 
   --primary-text-color: #28282f;
   --secondary-text-color: #797e8d;
-  --accent-color: #5a58e9;
-  --accent-color-dark: #1d69a3;
+  --accent-color: #ddd795;
+  --accent-color-dark: black;
   --padding-inline-section: 20px;
 }
+  
+  [data-theme='dark'] {
+
+  --background-color: black ; 
+  --primary-text-color: #707070;
+  --secondary-text-color: #797e8d;
+  --accent-color: #bebebe;
+  --accent-color-dark: black;
+  --padding-inline-section: 20px;
+}
+
+
+
 
 /* resets */
 body {
   font-family: "Jost", sans-serif;
   color: var(--primary-text-color);
+  background-color: var(--background-color);
 }
 
 h1 {
@@ -239,7 +258,7 @@ header {
   align-items: flex-start;
 }
 .feature-text h4 {
-  color: #434f57;
+  color: var(--secondary-text-color);
 }
 
 #second-big-feature {
@@ -306,31 +325,31 @@ header {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  color: white;
+  color: var(--primary-text-color);
 }
 
 /* cta section  */
 .cta-section-container {
   flex-direction: column;
   gap: 30px;
-  color: white;
+  color: var(--primary-text-color);
   text-align: center;
 }
 
 .cta-section-container p {
-  color: white;
+  color: var(--primary-text-color);
   margin-top: 20px;
 }
 
 .cta-section {
   padding: 120px 30px 80px;
-  background-color: #9e88ed;
+  background-color: var(--accent-color);
 }
 
 /* footer  */
 footer {
   padding-block: 80px;
-  background-color: #f1e7ff;
+  background-color: var(--background-color);
 }
 .link-column {
   flex-direction: column;
@@ -345,7 +364,7 @@ footer {
 
 /* sub footer  */
 .subfooter {
-  background-color: #beadfa;
+  background-color: var(--accent-color);
   padding: 30px;
 }
 
@@ -354,11 +373,13 @@ footer {
   gap: 30px;
 }
 
+
+
 /* reusable */
 .button {
   display: inline-block;
-  background-color: #d0bfff;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: 500;
@@ -375,12 +396,12 @@ footer {
 .button-link {
   padding: 0;
   background-color: transparent;
-  color: #5b0888;
+  color: var(--accent-color);
 }
 
 .button-link:hover {
   background-color: transparent;
-  color: #5a58e9;
+  color: var(--accent-color);
 }
 
 .services-button {
@@ -402,7 +423,7 @@ footer {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,7 +436,7 @@ footer {
 
 .services-box-content {
   position: relative;
-  background-color: #fff;
+  background-color: var(--background-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
@@ -446,12 +467,12 @@ footer {
   top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: #5b0888;
+  color: var(--accent-color);
   cursor: pointer;
 }
 
 .services-list-icon {
-  color: #5b0888;
+  color: var(--accent-color);
   margin-top: 0.25rem;
   margin-right: 0.25rem;
 }
@@ -463,12 +484,12 @@ footer {
 /* scroll thumb and bar  */
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: #d8d8ff;
+  background-color: var(--accent-color-dark);
   border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #c2c1ff;
+  background-color: var(--accent-color-dark);
   border-radius: 0.5rem;
 }
 /* scroll to top  */
@@ -476,7 +497,7 @@ footer {
   position: fixed;
   right: 1rem;
   bottom: -20%;
-  background-color: #5a58e9;
+  background-color: var(--accent-color);
   opacity: 0.8;
   padding: 0.2rem 0.4rem;
   border-radius: 0.4rem;
@@ -485,12 +506,12 @@ footer {
 }
 
 .scrollup:hover {
-  background-color: #4341ba;
+  background-color: var(--accent-color);
 }
 
 .scroll-up-icon {
   font-size: 1.25rem;
-  color: #fff;
+  color: var(--background-color);
 }
 
 .show-scroll {
